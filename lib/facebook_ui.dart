@@ -6,12 +6,11 @@ import 'data/post_model.dart';
 import 'moduis.dart/app_bar.dart';
 import 'moduis.dart/bady_post.dart';
 import 'moduis.dart/header_post.dart';
+import 'moduis.dart/navigationBar.dart';
 import 'moduis.dart/storios.dart';
 import 'moduis.dart/suggestion.dart';
 
 class FacebookUi extends StatelessWidget {
-   
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,9 +20,11 @@ class FacebookUi extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               FacebookStory(),
-               HeaderPost(),
-                BadyPost(),
-                 Suggestion()],
+              HeaderPost(),
+              BadyPost(),
+              Suggestion(),
+              NavigationBarFace()
+            ],
           ),
         ));
   }
